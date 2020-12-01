@@ -38,7 +38,7 @@ const idcard = new IdCardPro();
       type: 0, // 人脸数据类型 1-视频 0-静态图片
       compareThreshold: 0.5, // 人证照比对阈值
       idcardFile: await idcard.parseImage(path.join(__dirname, './img/f1.jpg')),
-      faceFile: await idcard.parseImage(path.join(__dirname, './img/faceA.jpg'))
+      faceFile: await idcard.parseImage(path.join(__dirname, './img/f2.jpg'))
     };
     const compareRes = idcard.faceIdcardCompare(compareOpts);
 
